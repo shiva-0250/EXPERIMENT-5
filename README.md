@@ -94,3 +94,20 @@ public class TestVehicle1 {
 ```
 ## output:
 ![output of 5b](5b.png)
+
+## 5C.StringBuffer -delete and remove charecters
+## source code:
+``` java
+public class StringBufferDeleteDemo {
+    public static void main(String[] args) {
+        StringBuffer sb = new StringBuffer("Java Programming");
+        System.out.println("Original String: " + sb);
+        sb.deleteCharAt(4);
+        System.out.println("After deleting character at index 4: " + sb);
+        sb.delete(0, 4);
+        System.out.println("After deleting characters from index 0 to 4: " + sb);
+    }
+}
+```
+## output:
+![output of 5c](5c.png)
