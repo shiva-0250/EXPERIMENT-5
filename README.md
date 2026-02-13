@@ -60,3 +60,37 @@ public class TestSort {
 ```
 ## output:
 ![output of 5a](5a.png)
+
+## 5B.Implement Runtime Polymorphism
+## source code:
+``` java
+class Vehicle {
+    void run() {
+        System.out.println("Vehicle is running");
+    }
+
+}
+class Car extends Vehicle {
+    void run() {
+        System.out.println("Car is running on four wheels");
+    }
+}
+class Bike extends Vehicle {
+    void run() {
+        System.out.println("Bike is running on two wheels");
+    }
+}
+public class TestVehicle1 {
+    public static void main(String[] args) {
+        Vehicle v;
+        v = new Car();
+        v.run();
+        v = new Bike();
+        v.run();
+        v = new Vehicle();
+        v.run();
+    }
+}
+```
+## output:
+![output of 5b](5b.png)
